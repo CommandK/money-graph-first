@@ -14,6 +14,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import travelImage from "./static/images/travel.jpeg";
+
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -52,9 +54,10 @@ export default function RecipeReviewCard() {
       <CardMedia
         component="img"
         height="194"
-        image="/static/images/travel-image.webp"
-        alt="Paella dish"
+        image={travelImage}
+        alt="Oslo airport"
       />
+
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           This impressive paella is a perfect party dish and a fun meal to cook together with your
